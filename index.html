@@ -19,6 +19,272 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <i class="fab fa-angellist"></i>
+            <a href="#">Inhye</a>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item active">Home</li>
+            <li class="navbar__menu__item">About</li>
+            <li class="navbar__menu__item">Skills</li>
+            <li class="navbar__menu__item">My works</li>
+            <li class="navbar__menu__item">Testmonial</li>
+            <li class="navbar__menu__item">Contact</li>
+        </ul>
+    </nav>
+    <!-- Home -->
+    <section id="home">
+        <img 
+        src="images/IMG_5020.JPG" 
+        alt="Inhye's profile photo" 
+        class="home__avatar"
+        />
+        <h1 class="home__title">Hello, <br />I'm Dream Coder</h1>
+        <h2 class="home__description">Sample</h2>
+        <button class="home__contact">Contact Me</button>
+    </section>
+    <!-- About -->
+    <section id="about" class="section">
+        <h1>About Me</h1>
+        <p>Sample</p>
+        <!-- Possible Skills -->
+        <div class="about__majors">
+            <!-- major1 -->
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="major__title">HTML</div>
+                <div class="major__description">Sample</div>
+            </div>
+            <!-- major2 -->
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="major__title">CSS</div>
+                <div class="major__description">Sample</div>
+            </div>
+            <!-- major3 -->
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="major__title">Javsscript</div>
+                <div class="major__description">Sample</div>
+            </div>
+        </div>
+        <!-- Period Job & School -->
+        <div class="about__jobs">
+            <div class="job">
+                <img src="images/jobs/PTW.PNG" alt="" class="job__logo">
+                <p class="job__name"></p>
+                <p class="job__period"></p>
+            </div>
+            <div class="job">
+                <img src="images/jobs/logo_center_v2.jpg" alt="" class="job__logo">
+                <p class="job__name"></p>
+                <p class="job__period"></p>
+            </div>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>Experience with all phases of the software life-cycle. Passion for learning new technologies. 
+            <br />Capable of working within a team environment and indefendently. 
+            <br />Ability to plan and time schedule, work understrict time pressure and adapt quickly when needed.
+        </p>
+        <div class="skillset">
+            <!-- Skillset Left -->
+            <div class="skillset_left">
+                <h3 class="skillset__title">Skills</h3>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>Javascript</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skillset right -->
+            <div class="skillset_right">
+                <div class="tools">
+                    <h3 class="skillset__title">Tools</h3>
+                    <ul class="tools__list">
+                        <li><span>Visual Studio Code</span></li>
+                    </ul>
+                </div>
+                <div class="etc">
+                    <h3 class="skillset__title">Etc</h3>
+                    <ul class="etc__list">
+                        <li><span>Git</span></li>
+                        <li><span>QA Test</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work -->
+    <section id="work" class="section">
+        <h1>My work</h1>
+        <h3>Project</h3>
+        <div class="work_categories">
+            <button class="category__btn">All<span class="category__count">9</span></button>
+            <button class="category__btn">Front-end<span class="category__count">3</span></button>
+            <button class="category__btn">Back-end<span class="category__count">3</span></button>
+            <button class="category__btn">Mobile<span class="category__count">3</span></button>
+        </div>
+        <div class="work__projects">
+            <a 
+                href="https://github.com/ineainea" 
+                class="project"
+                target="blank">
+            </a>
+            <img src="images/projects/project1.png" alt="">
+            <div class="project__description">
+                <h3>Youtube Site1</h3>
+                <span>Clone coding with HTMl and CSS</span>
+            </div>
+            <a 
+                href="https://github.com/ineainea" 
+                class="project"
+                target="blank">
+            </a>
+            <img src="images/projects/project2.png" alt="">
+            <div class="project__description">
+                <h3>Youtube Mobile Site1</h3>
+                <span>Clone coding with HTMl and CSS</span>
+            </div>
+            <a 
+                href="https://github.com/ineainea" 
+                class="project"
+                target="blank">
+            </a>
+            <img src="images/projects/project3.png" alt="">
+            <div class="project__description">
+                <h3>Youtube Site2</h3>
+                <span>Clone coding with HTMl and CSS</span>
+            </div>
+            <a 
+                href="https://github.com/ineainea" 
+                class="project"
+                target="blank">
+            </a>
+            <img src="images/projects/project4.png" alt="">
+            <div class="project__description">
+                <h3>Youtube Site3</h3>
+                <span>Clone coding with HTMl and CSS</span>
+            </div>
+            <a 
+                href="https://github.com/ineainea" 
+                class="project"
+                target="blank">
+            </a>
+            <img src="images/projects/project5.png" alt="">
+            <div class="project__description">
+                <h3>Youtube Mobile Site2</h3>
+                <span>Clone coding with HTMl and CSS</span>
+            </div>
+            <a 
+                href="https://github.com/ineainea" 
+                class="project"
+                target="blank">
+            </a>
+            <img src="images/projects/project6.png" alt="">
+            <div class="project__description">
+                <h3>Youtube Site4</h3>
+                <span>Clone coding with HTMl and CSS</span>
+            </div>
+            <a 
+                href="https://github.com/ineainea" 
+                class="project"
+                target="blank">
+            </a>
+            <img src="images/projects/project7.png" alt="">
+            <div class="project__description">
+                <h3>Youtube Mobile Site3</h3>
+                <span>Clone coding with HTMl and CSS</span>
+            </div>
+            <a 
+                href="https://github.com/ineainea" 
+                class="project"
+                target="blank">
+            </a>
+            <img src="images/projects/project8.png" alt="">
+            <div class="project__description">
+                <h3>Youtube Site5</h3>
+                <span>Clone coding with HTMl and CSS</span>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+        <h1>Testimonials</h1>
+        <h3>See what they say about me</h3>
+        <div class="testimonials">
+            <div class="testimonial">
+                <img 
+                    src="images/people1-200515-154332.jpg" 
+                    alt="people" 
+                    class="testimonial__avartar"
+                />
+                <div class="testimonial__speech-bubble">
+                    <p>Sample</p>
+                    <p class="name"><a href="">Ellie</a> / Samsung</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <img 
+                    src="images/people1-200515-154332.jpg" 
+                    alt="people" 
+                    class="testimonial__avartar"
+                />
+                <div class="testimonial__speech-bubble">
+                    <p>Sample</p>
+                    <p class="name"><a href="">Ellie</a> / Samsung</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h1 class="contact__title">Let's talk</h1>
+        <h2 class="cantact_email">inhye2748@gmail.com</h2>
+        <div class="contact__links">
+            <a href="https://github.com/ineainea" target="_blank">
+                <i class="fab fa-github-alt"></i>
+            </a>
+            <a href="https://github.com/ineainea" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <p class="contact__rights">
+            2021 Dream Coding Inhye - All rights reserved
+        </p>
+    </section>
 </body>
 </html>
