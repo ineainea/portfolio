@@ -69,15 +69,20 @@ const projectContainer = document.querySelector('.work__projects');
 const projects = document.querySelectorAll('.project');
 workBtnContainer.addEventListener('click', (e) => {
     const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+    console.log('e.target.dataset.filter => ' + e.target.dataset.filter);
     if(filter == null) {
         return;
     }
     //My work에서 메뉴 버튼을 선택 시 이전 메뉴에 있던 active를 없애고 선택한 메뉴 버튼에 active 시킴
     const active = document.querySelector('.category__btn.selected');
-    active.classList.remove('selected');
+    if(active != null){
+        target.classList.remove('selected');    
+    }
+
+    // active.classList.remove('selected');
     // "button" 태그가 아닌 "span" 태그를 터치할 경우, span 태그에 "selected"가 활성화되서 css가 실행되지 않음
     // 그래서 "? true값 : fale값 " 문법을 사용해서 span태그를 선택하더라고 button 태그로 이동하게끔 설정함
-    const target = e.target.nodeNam === 'BUTTON' ? e.target : e.target.parentNode;
+    // const target = e.target.nodeNam === 'BUTTON' ? e.target : e.target.parentNode;
     target.classList.add('selected');
 
 
