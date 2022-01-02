@@ -76,14 +76,14 @@ workBtnContainer.addEventListener('click', (e) => {
     //My work에서 메뉴 버튼을 선택 시 이전 메뉴에 있던 active를 없애고 선택한 메뉴 버튼에 active 시킴
     const active = document.querySelector('.category__btn.selected');
     if(active != null){
-        target.classList.remove('selected');    
+        active.classList.remove('selected');    
     }
 
     // active.classList.remove('selected');
     // "button" 태그가 아닌 "span" 태그를 터치할 경우, span 태그에 "selected"가 활성화되서 css가 실행되지 않음
     // 그래서 "? true값 : fale값 " 문법을 사용해서 span태그를 선택하더라고 button 태그로 이동하게끔 설정함
     // const target = e.target.nodeNam === 'BUTTON' ? e.target : e.target.parentNode;
-    target.classList.add('selected');
+    e.target.classList.add('selected');
 
 
     // 메뉴를 누르면 해당 project 들이 사라지고
